@@ -130,16 +130,21 @@ module.exports = nextConfig
 
 ### Error Umum:
 
-1. **Build Failed:**
+1. **"Function Runtimes must have a valid version" Error:**
+   - **Penyebab:** Konfigurasi `functions` di `vercel.json` tidak diperlukan untuk Next.js
+   - **Solusi:** Hapus bagian `functions` dari `vercel.json` atau gunakan konfigurasi minimal
+   - **File yang sudah diperbaiki:** `vercel.json` sudah dioptimasi
+
+2. **Build Failed:**
    - Cek `package.json` dependencies
    - Pastikan semua import paths benar
    - Cek TypeScript errors
 
-2. **404 on Refresh:**
+3. **404 on Refresh:**
    - Pastikan menggunakan Next.js routing dengan benar
    - Cek konfigurasi `next.config.js`
 
-3. **Images Not Loading:**
+4. **Images Not Loading:**
    - Pastikan menggunakan `next/image`
    - Cek konfigurasi domains di `next.config.js`
 
