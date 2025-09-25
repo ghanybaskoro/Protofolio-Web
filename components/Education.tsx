@@ -6,7 +6,7 @@ export default function Education() {
       degree: 'Master of Management - Technology Management (M.M.)',
       institution: 'Multimedia Nusantara University',
       period: '08/2020 - 02/2022',
-      gpa: 'GPA 3.0',
+      gpa: 'GPA 3.72',
       location: 'Indonesia',
       highlights: [
         'Digitalization Project ICT - Business Technology',
@@ -18,7 +18,7 @@ export default function Education() {
       degree: 'Bachelor of Engineering - Industrial Engineering',
       institution: 'Institut Teknologi Indonesia',
       period: '09/2015 - 08/2019',
-      gpa: 'GPA 3.0',
+      gpa: 'GPA 3.20',
       location: 'Indonesia',
       highlights: [
         'Business Plan Supply Chain Management',
