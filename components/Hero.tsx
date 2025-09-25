@@ -1,10 +1,29 @@
 import { Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-primary-50 to-white">
       <div className="container-custom section-padding">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Photo Section */}
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full transform rotate-3"></div>
+              <div className="relative bg-white p-2 rounded-full">
+                <Image
+                  src="/asset/pas foto ghany.jpeg"
+                  alt="Ghany Widito Baskoro - Professional Photo"
+                  width={300}
+                  height={300}
+                  className="rounded-full object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Content Section */}
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">
