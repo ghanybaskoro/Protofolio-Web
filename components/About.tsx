@@ -66,7 +66,7 @@ export default function About() {
               <div className="text-primary-100">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">3</div>
+              <div className="text-3xl font-bold mb-2">2</div>
               <div className="text-primary-100">ERP Implementations</div>
             </div>
             <div>
