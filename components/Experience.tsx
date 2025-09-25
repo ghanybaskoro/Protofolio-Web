@@ -6,12 +6,13 @@ export default function Experience() {
       title: 'Finance Business System Specialist',
       company: 'Modinity Group',
       location: 'Jakarta Selatan',
-      period: '03/2025 - Present',
-      description: 'Served as Scrum Master in the ERP Finance Software Development Project. Collect, Analyze, and Create Data Requirements for ERP Finance related.',
+      period: '03/2025 - 08/2025',
+      description: 'As a Finance Business System Associate, the role focuses on bridging financial operations with technology by leading and supporting ERP Finance initiatives.',
       responsibilities: [
         'Lead ERP Finance software development as Scrum Master',
         'Collect and analyze data requirements for ERP Finance projects',
-        'Coordinate cross-functional teams in agile development process'
+        'Coordinate cross-functional teams in agile development process',
+        'Served as Scrum Master in the ERP Finance Software Development Project.'
       ]
     },
     {
@@ -19,7 +20,7 @@ export default function Experience() {
       company: 'PT Asuransi Jiwa IFG - Asian Technology Solution',
       location: 'Jakarta Selatan',
       period: '07/2023 - 02/2025',
-      description: 'Responsible for and lead the ERP EBS Oracle Finance software development project (GL, AP/AR, CM, FA, Budget, iProc&Purch)',
+      description: 'Experienced in creating a new Chart of Accounts (CoA) and assisting accounting users in mapping recorded transactions into a journal New CoA for IFGLs General Ledger on ERP EBS Oracle. Ive also led the construction and upgrading of the ERP Finance GL Module to meet customer requests for customization. Lead & monitor implementation AR/AP, Cash Management, Fixed Asset, iProc & Purchasing Moduls.',
       responsibilities: [
         'Lead ERP EBS Oracle Finance software development project',
         'Manage GL, AP/AR, CM, FA, Budget, iProc & Purch modules',
@@ -33,13 +34,15 @@ export default function Experience() {
       company: 'PT Esensi Solusi Buana',
       location: 'Indonesia',
       period: '09/2022 - 03/2023',
-      description: 'Create, maintain, and prioritize product roadmap based on business value. Own, manage, and evaluate daily product development, goals, and schedules.',
+      description: 'Drive end-to-end product development by aligning business strategy with execution, managing roadmap and backlog, and collaborating with cross-functional teams. Experienced in translating requirements into actionable tasks, coordinating third-party integrations, supporting UAT, and proposing continuous product improvements to stakeholders.',
       responsibilities: [
-        'Create, maintain, and prioritize product roadmap based on business value',
-        'Own, manage, and evaluate daily product development goals and schedules',
-        'Adjust expectations and set priorities for development teams',
-        'Translate strategies, roadmaps, user stories, and business requirements to actionable tasks',
-        'Coordinate between stakeholders and development teams'
+        'Work closely with and not limited to Product Management, Product Engineering, and Business Development teams to create, maintain, and prioritize product roadmap and backlog according to business value.',
+        'Own, manage, and evaluate daily product development, goals, and schedules, adjusting expectations and setting priorities.',
+        'Responsible for translating strategies, roadmaps, user stories, and business requirements to actionable tasks for development by collaborating with Product Design, Software Engineering, and Innovation Engineering teams.',
+        'Together with Innovation Engineer handle coordination with third parties (vendors or clients) for new system integration process.',
+        'Assist Quality Assurance in User Acceptance Test.',
+        'Schedule and lead internal and client meetings to surface issues, identify fixes, and advance projects.',
+        'Conduct research, requirement gathering, and product evaluation on a regular basis and propose product improvement to stakeholders.'
       ]
     },
     {

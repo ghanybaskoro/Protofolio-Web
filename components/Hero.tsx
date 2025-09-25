@@ -5,84 +5,92 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-primary-50 to-white">
       <div className="container-custom section-padding">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Photo Section */}
-          <div className="flex justify-center lg:justify-start">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full transform rotate-3"></div>
-              <div className="relative bg-white p-2 rounded-full">
-                <Image
-                  src="/asset/pas foto ghany.jpeg"
-                  alt="Ghany Widito Baskoro - Professional Photo"
-                  width={300}
-                  height={300}
-                  className="rounded-full object-cover"
-                  priority
-                />
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Column - Photo & Basic Info */}
+          <div className="space-y-8">
+            {/* Photo Section */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full transform rotate-3 scale-105"></div>
+                <div className="relative bg-white p-3 rounded-full shadow-2xl">
+                  <Image
+                    src="/asset/pas foto ghany.jpeg"
+                    alt="Ghany Widito Baskoro - Professional Photo"
+                    width={320}
+                    height={320}
+                    className="rounded-full object-cover w-72 h-72 lg:w-80 lg:h-80"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-4 text-center lg:text-left">
+              <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
+                <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600">
+                  <Mail size={18} className="text-primary-600" />
+                  <span className="text-sm">ghany.baskoro@gmail.com</span>
+                </div>
+                <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600">
+                  <Phone size={18} className="text-primary-600" />
+                  <span className="text-sm">081318732870</span>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600">
+                <MapPin size={18} className="text-primary-600" />
+                <span className="text-sm">Tangerang Selatan, 06 June 1997</span>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex justify-center lg:justify-start gap-4 pt-4">
+                <a 
+                  href="https://linkedin.com/in/ghany-widito-baskoro-462221191" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-primary-600 text-white px-5 py-2.5 rounded-lg hover:bg-primary-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                >
+                  <Linkedin size={18} />
+                  <span className="text-sm font-medium">LinkedIn</span>
+                </a>
+                <a 
+                  href="https://instagram.com/ghany.baskoro" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-5 py-2.5 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+                >
+                  <Instagram size={18} />
+                  <span className="text-sm font-medium">Instagram</span>
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Content Section */}
+          {/* Right Column - Content */}
           <div className="space-y-8">
+            {/* Main Title */}
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
                 Hi, I'm{' '}
                 <span className="gradient-text">Ghany</span>
               </h1>
-              <h2 className="text-2xl lg:text-3xl text-gray-700 font-medium">
+              <h2 className="text-xl lg:text-2xl xl:text-3xl text-gray-700 font-medium">
                 Industrial Engineering & Technology Management
               </h2>
             </div>
             
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
+            {/* Description */}
+            <p className="text-lg text-gray-600 leading-relaxed">
               Experienced Product Owner and ERP Finance Specialist with a strong background in 
               Industrial Engineering and Technology Management. Passionate about driving digital 
               transformation and optimizing business processes through data-driven solutions.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex items-center gap-2 text-gray-600">
-                <Mail size={20} />
-                <span>ghany.baskoro@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-600">
-                <Phone size={20} />
-                <span>081318732870</span>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2 text-gray-600">
-              <MapPin size={20} />
-              <span>Tangerang Selatan, 06 June 1997</span>
-            </div>
-
-            <div className="flex gap-4">
-              <a 
-                href="https://linkedin.com/in/ghany-widito-baskoro-462221191" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors duration-200"
-              >
-                <Linkedin size={20} />
-                LinkedIn
-              </a>
-              <a 
-                href="https://instagram.com/ghany.baskoro" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200"
-              >
-                <Instagram size={20} />
-                Instagram
-              </a>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-6">Professional Summary</h3>
-              <div className="space-y-4 text-sm leading-relaxed">
+            {/* Professional Summary Card */}
+            <div className="bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl p-6 text-white shadow-xl">
+              <h3 className="text-xl font-bold mb-4">Professional Summary</h3>
+              <div className="space-y-3 text-sm leading-relaxed">
                 <p>
                   While working as Management Development Program, I took Masters degree in Technology Management (M.M.) 
                   and graduated in February 2022. Able to perform business operational simulations and do feasibility 
@@ -93,7 +101,7 @@ export default function Hero() {
                   front-end services apps and ERP Financial Module applications. Accustomed to brainstorming and 
                   discussion in solving problems using data analysis tools.
                 </p>
-                <p className="italic">
+                <p className="italic border-l-2 border-primary-200 pl-4">
                   "My biggest fear is facing a learning decline, doing repetitive work for long periods of time 
                   that can reduce insight of mindset and point of view."
                 </p>
