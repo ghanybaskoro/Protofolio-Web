@@ -3,8 +3,11 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-primary-50 to-white">
-      <div className="container-custom section-padding">
+    <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
+      {/* Gradient transition from Greetings */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-primary-50 to-transparent z-10"></div>
+      
+      <div className="container-custom section-padding relative z-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Photo & Basic Info */}
           <div className="space-y-8">

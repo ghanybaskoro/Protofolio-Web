@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import Greetings from '@/components/Greetings'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navigation />
+      <Greetings />
       <Hero />
       <About />
       <Experience />
