@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-primary-50 to-transparent z-10"></div>
       
       <div className="container-custom section-padding relative z-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-3 gap-16 items-center">
           {/* Left Column - Photo & Basic Info */}
           <div className="space-y-8">
             {/* Photo Section */}
@@ -71,7 +71,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column - Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 lg:col-span-2">
             {/* Main Title */}
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
