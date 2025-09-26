@@ -12,7 +12,8 @@ export default function Education() {
         'Digitalization Project ICT - Business Technology',
         'TOEIC 675',
         'Financial Projection'
-      ]
+      ],
+      thesisLink: 'https://drive.google.com/file/d/1Or4WeRCcQuos0XtbLpMvHpzy0L32QbNi/view?usp=sharing'
     },
     {
       degree: 'Bachelor of Engineering - Industrial Engineering',
@@ -23,7 +24,8 @@ export default function Education() {
       highlights: [
         'Business Plan Supply Chain Management',
         'Statistics Tools Business Simulation'
-      ]
+      ],
+      thesisLink: 'https://drive.google.com/file/d/1rVz8p-qgFxg0pzCO8H4-Guu8hm7mTOdO/view?usp=sharing'
     }
   ]
 
@@ -33,14 +35,16 @@ export default function Education() {
       organization: 'The 13th Statistika Ria Institut Pertanian Bogor',
       date: '11/2018',
       description: 'College students from universities across Southeast Asia region are welcomed to join this competition.',
-      link: 'https://www.instagram.com/p/BrfmLQTlssm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
+      link: 'https://www.instagram.com/p/BrfmLQTlssm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+      certificateUrl: 'https://drive.google.com/file/d/1V94xcl9Rkn6zX8nFYfiALumCMEehDoM3/view?usp=sharing'
     },
     {
       title: 'Participant Fresh Graduate Academy Digital Talent Scholarship Machine Learning',
       organization: 'Kementerian Komunikasi dan Informatika Republik Indonesia',
       date: '08/2019',
       description: 'Digital Talent Scholarship 2019',
-      link: 'https://www.instagram.com/p/B1bolofh0x8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
+      link: 'https://www.instagram.com/p/B1bolofh0x8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+      certificateUrl: 'https://drive.google.com/file/d/1LpUDzg7rfoYHQITk_rpFPBDp7bCyAQqF/view?usp=sharing'
     },
     {
       title: 'Top 5 Ranking Business Plan Technopreneurship Competition',
@@ -101,6 +105,21 @@ export default function Education() {
                         </li>
                       ))}
                     </ul>
+                    {edu.thesisLink && (
+                      <div className="mt-4">
+                        <a 
+                          href={edu.thesisLink} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium text-sm transition-colors duration-200"
+                        >
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                          </svg>
+                          View Thesis/Final Project
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -121,8 +140,8 @@ export default function Education() {
                     <div className="text-primary-600 font-semibold mb-2">{achievement.organization}</div>
                     <div className="text-sm text-gray-600 mb-3">{achievement.date}</div>
                     <p className="text-gray-600 text-sm leading-relaxed">{achievement.description}</p>
-                    {achievement.link && (
-                      <div className="mt-3">
+                    <div className="mt-3 flex flex-wrap gap-3">
+                      {achievement.link && (
                         <a 
                           href={achievement.link} 
                           target="_blank" 
@@ -134,8 +153,21 @@ export default function Education() {
                           </svg>
                           View Evidence
                         </a>
-                      </div>
-                    )}
+                      )}
+                      {achievement.certificateUrl && (
+                        <a 
+                          href={achievement.certificateUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-3 py-1.5 rounded-lg font-medium text-sm transition-colors duration-200"
+                        >
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                          </svg>
+                          View Certificate
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}

@@ -24,49 +24,56 @@ export default function Certificates() {
       issuer: 'Lembaga Pelatihan Kompetensi Teknik Dan Manajemen Industri - BNSP',
       date: '02/2022 - 02/2024',
       status: 'Valid',
-      description: 'Professional certification in supply chain management competencies'
+      description: 'Professional certification in supply chain management competencies',
+      certificateUrl: 'https://drive.google.com/file/d/1z6i55n2mYnPpIC_X3dEOsrmXOhT9ExYD/view?usp=sharing'
     },
     {
       title: 'SAP Implementation Methodology for Enterprise Resource Planning',
       issuer: 'Persatuan Insinyur Indonesia Learning Center',
       date: '03/2022 - Present',
       status: 'Valid',
-      description: 'Advanced methodology for implementing SAP ERP solutions in enterprise environments'
+      description: 'Advanced methodology for implementing SAP ERP solutions in enterprise environments',
+      certificateUrl: 'https://drive.google.com/file/d/14Ysc2vw3WMkh0SVWRRNbpUT6LK0v5ewY/view'
     },
     {
       title: 'Kursus ERP with Odoo Series #1 Peta Jalan, Bisnis Proses dan Implementasi ERP',
       issuer: 'Persatuan Insinyur Indonesia Learning Center',
       date: '10/2021 - Present',
       status: 'Valid',
-      description: 'Comprehensive ERP implementation course covering business processes and roadmapping'
+      description: 'Comprehensive ERP implementation course covering business processes and roadmapping',
+      certificateUrl: 'https://drive.google.com/file/d/1fvLX1JU9CgZ0IZg6UQZ6b4ZFNNepEMti/view?usp=sharing'
     },
     {
       title: 'Awareness Training for Quality Management System Based On ISO 9001:2015',
       issuer: 'Bina Profesi Institute',
       date: '10/2018 - Present',
       status: 'Valid',
-      description: 'Quality management system awareness and implementation training'
+      description: 'Quality management system awareness and implementation training',
+      certificateUrl: 'https://drive.google.com/file/d/1lqbz8InI7QlK9OIM7f30MW1XgnDC4POD/view?usp=sharing'
     },
     {
-      title: 'Supply Chain Analytics in Python',
+      title: 'Exploratory Data Analysis in Python',
       issuer: 'DataCamp.com',
-      date: '09/2019 - Present',
+      date: '11/2019 - Present',
       status: 'Valid',
-      description: 'Data analytics and programming skills for supply chain optimization'
+      description: 'Data analytics and programming skills in Exploring and Analyzing Data',
+      certificateUrl: 'https://drive.google.com/file/d/1_TsMx0TDFe1FB5jU0yfEXyrUzPxbdQHF/view?usp=sharing'
     },
     {
       title: 'Business Process Analytics in R',
       issuer: 'DataCamp.com',
       date: '10/2019 - Present',
       status: 'Valid',
-      description: 'Statistical analysis and business process optimization using R programming'
+      description: 'Statistical analysis and business process optimization using R programming',
+      certificateUrl: 'https://drive.google.com/file/d/1oFQvOq8G8nKXfV8qZw6B0-T1C9eDv0U2/view?usp=sharing'
     },
     {
-      title: 'SQL Fundamentals course',
-      issuer: 'SoloLearn (E-Learning)',
-      date: '10/2019 - Present',
+      title: 'SQL Intermediate',
+      issuer: 'Hackerrank',
+      date: '06/2022 - Present',
       status: 'Valid',
-      description: 'Fundamental database management and SQL programming skills'
+      description: 'Fundamental to Intermediate SQL programming skills',
+      certificateUrl: 'https://drive.google.com/file/d/1sVo0shiE2EInxtz57eFIcOsG7S0ztwPW/view?usp=sharing'
     }
   ]
 

@@ -14,7 +14,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full transform rotate-3 scale-105"></div>
                 <div className="relative bg-white p-3 rounded-full shadow-2xl">
                   <Image
-                    src="/asset/pas foto ghany.jpeg"
+                    src="/asset/pas foto ghany2.jpg"
                     alt="Ghany Widito Baskoro - Professional Photo"
                     width={320}
                     height={320}
