@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Instagram, Download } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Hero() {
@@ -46,8 +46,8 @@ export default function Hero() {
                 <span className="text-sm">Tangerang Selatan, 06 June 1997</span>
               </div>
 
-              {/* Social Links */}
-              <div className="flex justify-center lg:justify-start gap-4 pt-4">
+              {/* Social Links & CV */}
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 pt-4">
                 <a 
                   href="https://linkedin.com/in/ghany-widito-baskoro-462221191" 
                   target="_blank" 
@@ -65,6 +65,14 @@ export default function Hero() {
                 >
                   <Instagram size={18} />
                   <span className="text-sm font-medium">Instagram</span>
+                </a>
+                <a 
+                  href="/cv_ghany.pdf" 
+                  download="Resume_Ghany_Widito_Baskoro.pdf"
+                  className="flex items-center gap-2 border-2 border-primary-600 text-primary-700 bg-white px-5 py-2.5 rounded-lg hover:bg-primary-50 transition-all duration-200 shadow-lg hover:shadow-xl"
+                >
+                  <Download size={18} />
+                  <span className="text-sm font-bold">Download CV</span>
                 </a>
               </div>
             </div>

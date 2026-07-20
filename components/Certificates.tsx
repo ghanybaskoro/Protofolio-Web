@@ -74,6 +74,14 @@ export default function Certificates() {
       status: 'Valid',
       description: 'Fundamental to Intermediate SQL programming skills',
       certificateUrl: 'https://drive.google.com/file/d/1sVo0shiE2EInxtz57eFIcOsG7S0ztwPW/view?usp=sharing'
+    },
+    {
+      title: 'AWS Cloud Practitioner Essentials',
+      issuer: 'Amazon Web Services (AWS)',
+      date: 'Present',
+      status: 'Valid',
+      description: 'Fundamental understanding of AWS Cloud concepts, services, security, architecture, pricing, and support.',
+      certificateUrl: 'https://drive.google.com/file/d/1j_GSRGz-r_QWfRsS2dhIeBWNDdjsrnhu/view?usp=sharing'
     }
   ]
 
@@ -155,7 +163,7 @@ export default function Certificates() {
           <div className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-2xl p-8 text-white">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold mb-2">8</div>
+                <div className="text-3xl font-bold mb-2">9</div>
                 <div className="text-primary-100">Total Certifications</div>
               </div>
               <div>

@@ -79,6 +79,17 @@ export default function Activity() {
       thumbnail: '/asset/samudera-komoditi-indonesia.jpg',
       fileUrl: 'https://samudera-komoditas-indonesia.vercel.app/',
       tags: ['React', 'Next.js', 'Supabase', 'CMS', 'Product Catalog', 'AI Assisted']
+    },
+    {
+      id: 'arsenio-trans-project',
+      title: 'Landing Web Page Development - Arsenio Trans',
+      description: 'Landing Web Page Development for Arsenio Trans Travel Platform. Built a native React booking form with secure WhatsApp integration, implemented semantic HTML for SEO optimization, and executed a responsive SPA migration using Vite and Tailwind CSS.',
+      date: '2026',
+      category: 'Web Development',
+      type: 'website',
+      thumbnail: '/asset/arsenio-trans-web.jpg',
+      fileUrl: 'https://arseniotrans.com/',
+      tags: ['React', 'Vite', 'Tailwind CSS', 'SEO', 'WhatsApp API']
     }
   ]
 
@@ -156,6 +167,11 @@ export default function Activity() {
                             <div className="w-2 h-2 bg-white rounded-full"></div>
                           </div>
                         )}
+                        {activity.id === 'arsenio-trans-project' && (
+                          <div className="absolute -top-1 -right-1 w-4 h-4 bg-orange-500 rounded-full flex items-center justify-center">
+                            <div className="w-2 h-2 bg-white rounded-full"></div>
+                          </div>
+                        )}
                       </div>
                       <div className="text-primary-600 font-semibold text-sm mb-1">
                         {activity.type.toUpperCase()} Document
@@ -190,6 +206,11 @@ export default function Activity() {
                           COMPANY PROFILE
                         </div>
                       )}
+                      {activity.id === 'arsenio-trans-project' && (
+                        <div className="text-xs text-primary-500 font-medium">
+                          TRAVEL PLATFORM
+                        </div>
+                      )}
                     </div>
                   )}
 
@@ -216,6 +237,9 @@ export default function Activity() {
                   )}
                   {activity.id === 'samudera-komoditas' && (
                     <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent"></div>
+                  )}
+                  {activity.id === 'arsenio-trans-project' && (
+                    <div className="absolute inset-0 bg-gradient-to-t from-orange-900/20 to-transparent"></div>
                   )}
                 </div>
 
@@ -265,7 +289,7 @@ export default function Activity() {
                       className="flex items-center justify-center gap-2 w-full bg-primary-600 hover:bg-primary-700 text-white px-4 py-2.5 rounded-lg font-medium text-sm transition-colors duration-200"
                     >
                       <ExternalLink size={16} />
-                      View Document
+                      {activity.type === 'website' ? 'View Website' : 'View Document'}
                     </a>
                   </div>
                 </div>

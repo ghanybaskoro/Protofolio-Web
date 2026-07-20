@@ -5,7 +5,7 @@ const nextConfig = {
   
   // Image optimization
   images: {
-    unoptimized: false,
+    unoptimized: true,
     domains: [],
   },
   
