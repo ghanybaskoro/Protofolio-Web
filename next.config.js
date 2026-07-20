@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Optimize for production (only in production build)
-  ...(process.env.NODE_ENV === 'production' && { output: 'standalone' }),
+  // Optimize for production (removed standalone for Vercel deployment stability)
   
   // Image optimization
   images: {
